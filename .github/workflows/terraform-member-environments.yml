@@ -1,18 +1,6 @@
 name: "Terraform: Member environments"
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'terraform/environments/**/*.tf'
-      - '!terraform/environments/core-*'
-  pull_request:
-    types: [opened, edited, reopened, synchronize]
-    paths:
-      - 'terraform/environments/**/*.tf'
-      - '!terraform/environments/core-*'
-      - '.github/workflows/terraform-member-environments.yml'
   workflow_dispatch:
 
 defaults:
