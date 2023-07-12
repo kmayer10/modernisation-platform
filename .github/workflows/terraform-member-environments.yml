@@ -32,8 +32,6 @@ jobs:
   terraform-plan:
     environment: ${{ matrix.environment }}
     name: 'Terraform Plan'
-    permissions:
-      pull-requests: write
     runs-on: ubuntu-latest
     strategy:
       matrix:
